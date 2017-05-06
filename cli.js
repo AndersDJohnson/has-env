@@ -2,6 +2,8 @@
 
 var hasEnv = require('.')
 
-var key = process.argv[2]
+var argv = process.argv
+var key = argv[2]
+var value = argv[3]
 
-if (!hasEnv(key)) process.exit(1)
+if (!hasEnv(key, value)) process.exit(1)

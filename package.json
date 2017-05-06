@@ -7,7 +7,7 @@
     "has-env": "cli.js"
   },
   "scripts": {
-    "test": "node cli.js HOME && fails 'node cli.js NONEXISTENT'"
+    "test": "node cli.js HOME && node cli.js npm_package_name has-env && fails 'node cli.js NONEXISTENT'"
   },
   "keywords": [],
   "repository": "AndersDJohnson/has-env",
