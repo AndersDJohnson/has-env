@@ -1,0 +1,19 @@
+{
+  "name": "has-env",
+  "version": "1.0.0",
+  "description": "CLI to detect whether an environment variable exists.",
+  "main": "index.js",
+  "bin": {
+    "has-env": "cli.js"
+  },
+  "scripts": {
+    "test": "node cli.js HOME && fails 'node cli.js NONEXISTENT'"
+  },
+  "keywords": [],
+  "repository": "AndersDJohnson/has-env",
+  "author": "Anders D. Johnson",
+  "license": "ISC",
+  "devDependencies": {
+    "fails": "^1.0.0"
+  }
+}
