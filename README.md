@@ -4,6 +4,7 @@
 Cross-platform solution.
 
 ## Install
+
 ```
 npm i has-env
 ```
@@ -13,7 +14,9 @@ yarn add has-env
 ```
 
 ## Use
+
 ### CLI
+
 ```
 has-env CI
 # exit code 1 unless `CI` env var exists, else 0
@@ -35,7 +38,11 @@ CI=false has-env CI true
 
 # Only do something on CI:
 has-env CI && ./my-script.sh
+
+# Do something on CI, something else locally:
+has-env CI && ./on-ci.sh || ./elsewhere.sh
 ```
+
 e.g. in `package.json`:
 ```json
 {
